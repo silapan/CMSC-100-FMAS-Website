@@ -13,24 +13,38 @@
     <a href="#featured">Featured Photo</a>
 </div>
 
-<div class="photo" id="featured">
+<section class="photo" id="featured">
     <h2 id="phototext"> </h2> <!--made for the space-->
-    <img id="fphoto" src="cheska.jpg">
-</div>
+    <img id="fphoto" src="cheska.jpg" class="featured-image">
+</section>
 
-<div class="projects" id="projects">
-    <h2 id="pptext">Previous Projects</h2>
-    <div class="flex-container">
-        <div class="flex-item"><img id="cake" src="cakeorder.png">CMSC 12 Exercise: Simple Order Form Website</div>
-        <div class="flex-item"><img id="nebula" src="nebulabulletstorm.png">CMSC 22 Project: 8-bit Shooting Game</div>
-        <div class="flex-item"><video id="trialgame" autoplay loop muted>
-            <source src="vidgame.mov" type="video/mp4">
-        </video>8-bit Game</div>
-        <div class="flex-item"><video id="proj" autoplay loop muted>
-            <source src="150proj.mov" type="video/mp4">
-        </video>CMSC 150 Project: Numerical Methods Calculators</div>
+
+<section class="previous-projects" id="projects">
+    <h2 class="section-title">Previous Projects</h2>
+    <div class="project-container">
+        <div class="project">
+            <img src="nebulabulletstorm.png" alt="Project 1" class="project-image">
+            <h3 class="project-title"><center>CMSC 22 Project: Nebula Bulletstorm</center></h3>
+            <p class="project-description"><center>An 8-bit space themed shooting game.</center></p>
+        </div>
+        <div class="project">
+            <video autoplay loop muted>
+                <source src="150proj.mov" type="video/mp4">
+            </video>
+            <h3 class="project-title"><center>CMSC 150: Numerical Methods Calculator</center></h3>
+            <p class="project-description"><center>A website calculator that accepts CSV as inputs and solves Polynomial Regression function
+                and Quadratic Spline Interpolation function.</center>
+            </p>
+        </div>
+        <div class="project">
+            <video autoplay loop muted>
+                <source src="vidgame.mov" type="video/mp4">
+            </video>
+            <h3 class="project-title"><center>Trial Game</center></h3>
+            <p class="project-description"><center>An 8-bit game similar to Mario Superbros.</center></p>
+        </div>
     </div>
-</div>
+</section>
 
 
 <div class="about-self">
