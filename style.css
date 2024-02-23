@@ -1,0 +1,121 @@
+/* Style for the content in the body */
+body {
+    background-color: white;
+    color: black;
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+
+/* Style for the logo in the navbar */
+.navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden; 
+    padding: 10px; /* Add padding */
+    }
+
+/* Style for the logo in the navbar */
+.navbar img {
+    float: left; /* Float the logo to the left */
+    height: 50px; /* height of the logo */
+}
+
+/* Style for the navigation bar */
+.navbar a {
+    float: right; /* Float the links to the right */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change the color navigation on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+/*Style for the featured photo*/
+#fphoto {
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+}
+
+/*Flex container for the previous projects*/
+.flex-container {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Distributes items evenly with space between them */
+    align-items: center;
+}
+/* Style for the flex items (previous projects*/
+.flex-item {
+    max-width: 250px; /* Set a maximum width for the flex items */
+    height: 250px; 
+    font-size: 20px; 
+    color: black; 
+    align-items: center; 
+    text-align: center;
+}
+
+
+/*Style for the text of the previous projects*/
+#pptext {
+    text-align: center;
+}
+
+
+/*Style for the images/videos of the previous projects*/
+#cake,
+#nebula,
+#trialgame,
+#proj {
+    width: 250px;
+    height: 187.5px; /* Maintain 4:3 aspect ratio */
+}
+
+
+/* Style for the about-self content */
+.about-self {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+
+/* Style for the skills */
+.skills {
+    width: 45%;
+    text-align: center;
+}
+
+/* Style for the about */
+.about {
+    width: 45%;
+    text-align: center;
+}
+
+/* Style for the back to top in the footer*/
+#back {
+    color: white;
+    font-size: 15px;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add padding */
+    bottom: 0; /* Stick to the bottom */
+    height: auto;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* Style for the logo in the footer */
+footer img {
+    height: 50px; /*height of the logo */
+    margin-bottom: 10px; /*  add space below the logo */
+}
