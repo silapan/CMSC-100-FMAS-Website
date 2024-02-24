@@ -1,173 +1,165 @@
+/* A reset sets margin and padding to 0*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
 /* Style for the content in the body */
 body {
-    background-color: white;
-    color: black;
-    font-family:"Lucida Console", "Courier New", monospace;
+  background-color: white;
+  color: black;
+  font-family:"Lucida Console", "Courier New", monospace;
 }
 
 /* Style for the logo in the navbar */
 .navbar {
-    background-color: #333; /* Background color */
-    overflow: hidden; 
-    padding: 10px; /* Add padding */
-    }
+  background-color: #333; /* Background color */
+  overflow: hidden; 
+  padding: 10px; /* Add padding */
+  }
 
 /* Style for the logo in the navbar */
 .navbar img {
-    float: left; /* Float the logo to the left */
-    height: 50px; /* height of the logo */
+  float: left; /* Float the logo to the left */
+  height: 50px; /* height of the logo */
 }
 
 /* Style for the navigation bar */
 .navbar a {
-    float: right; /* Float the links to the right */
-    color: white; /* Text color */
-    padding: 14px 20px; /* Add padding */
-    text-decoration: none; /* Remove underline */
+  float: right; /* Float the links to the right */
+  color: white; /* Text color */
+  padding: 14px 20px;
+  text-decoration: none; /* Remove underline */
 }
 
-/* Change the color navigation on hover */
+/* Change color of navigation on hover */
 .navbar a:hover {
-    background-color: #ddd; /* Background color on hover */
-    color: black; /* Text color on hover */
+  background-color: gray;
+  color: black; /* Text color on hover */
 }
 
-
+/* Style for the photo */
 .photo {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-  }
-  
-  .featured-image {
-    width: auto; /* Set width to auto to allow the image to expand horizontally */
-    max-width: 100%; /* Enlarge the width horizontally */
-    max-height: 100%; /* Maintain aspect ratio */
-    border-radius: 10px;
-    margin-bottom: 20px; /* Add space between image and content */
-    margin-top: 20px;
-  } 
-
-/*Flex container for the previous projects*/
-.flex-container {
-    display: flex; /* Enables flexbox */
-    justify-content: space-between; /* Distributes items evenly with space between them */
-    align-items: center;
-}
-/* Style for the flex items (previous projects*/
-.flex-item {
-    max-width: 250px; /* Set a maximum width for the flex items */
-    height: 250px; 
-    font-size: 20px; 
-    color: black; 
-    align-items: center; 
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+/* Style for the image and its size */
+.featured-image {
+  width: auto; /* Set to auto to allow to extend width*/
+  max-width: 100%; /* Enlarge the width horizontally */
+  max-height: 100%;
+  border-radius: 30px;
+  margin-bottom: 30px; 
+  margin-top: 30px;
+} 
 
+/* Style for the previous-projects */
 .previous-projects {
-    background-color: #f2f2f2;
-    padding: 60px 30px;
-    margin-bottom: 60px;
-  }
-  
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .project {
-    flex-basis: calc(30% - 30px);
-    margin-bottom: 30px;
-
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-
-
-  /* Style for the images/videos of the previous projects */
-.project video {
-    width: 100%;
-    height: auto;
+  background-color: lightgray;
+  padding: 60px 30px;
+  margin-bottom: 60px;
 }
-  
-  
-  
-  .project-title {
-    font-size: 28px;
-    color: #333;
-    margin: 18px;
+
+/* Style for the project-container (flex container)*/
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style for the project (flex items) */
+.project {
+  flex-basis: calc(40% - 340px);
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px gray; /* Adds shadow to the flex item or the projects*/
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Sets screen of images and videos to full width on smaller screens*/
+@media screen and (max-width: 800px) {
+  .project {
+    flex-basis: calc(100% - 30px); 
   }
-  
-  .project-description {
-    font-size: 20px;
-    color: #666;
-    margin: 0 18px 18px 18px;
-  }
-  
-  .project-link {
-    display: block;
-    background-color: #333;
-    color: #fff;
-    padding: 12px 24px;
-    text-align: center;
-    margin: 18px 0;
-  }
+}
+
+/* For size of the images of the previous projects */
+.project-sample {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* For sizes of videos of the previous projects */
+.project video {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 28px;
+  color: #333;
+  margin: 18px;
+}
+
+.project-description {
+  font-size: 20px;
+  color: #666;
+  margin: 0 18px 18px 18px;
+}
 
 
 /* Style for the about-self content */
 .about-self {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 20px;
-    font-family:"Lucida Console", "Courier New", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 20px;
+  font-family:"Lucida Console", "Courier New", monospace;
 }
 
 /* Style for the skills */
 .skills {
-    width: 45%;
-    text-align: center;
+  width: 45%;
+  text-align: center;
 }
 
 /* Style for the about */
 .about {
-    width: 45%;
-    text-align: center;
+  width: 45%;
+  text-align: center;
 }
 
 /* Style for the back to top in the footer*/
 #back {
-    color: white;
-    font-size: 15px;
+  color: white;
+  font-size: 15px;
 }
 
 /* Style for the footer */
 footer {
-    background-color: #333; /* Background color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Add padding */
-    bottom: 0; /* Stick to the bottom */
-    height: auto;
+  background-color: #333; 
+  color: white;
+  text-align: center; 
+  padding: 10px 0; 
+  bottom: 0; 
+  height: auto;
 }
 
+/* Style for the footer content */
 footer p {
-    margin: 5px;
-    font-size: 15px;
+  margin: 5px;
+  font-size: 15px;
 }
 
-/* Style for the logo in the footer */
+/* Style for the logo image in the footer */
 footer img {
-    height: 50px; /*height of the logo */
-    margin-bottom: 10px; /*  add space below the logo */
+  height: 50px;
+  margin-bottom: 10px; /*  Add space below the logo */
 }
