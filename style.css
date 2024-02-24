@@ -42,7 +42,7 @@ body {
   
   .featured-image {
     width: auto; /* Set width to auto to allow the image to expand horizontally */
-    max-width: 120%; /* Enlarge the width horizontally */
+    max-width: 100%; /* Enlarge the width horizontally */
     max-height: 100%; /* Maintain aspect ratio */
     border-radius: 10px;
     margin-bottom: 50px; /* Add space between image and content */
